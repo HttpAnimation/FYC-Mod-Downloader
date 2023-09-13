@@ -6,6 +6,7 @@ Welcome to the FYC Mod Downloader, your one-stop solution for easily adding mods
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Live Site](https://httpanimation.github.io/FYC-Mod-Downloader/)
 
 ---
 
