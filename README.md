@@ -18,7 +18,7 @@ FYC Mod Downloader is designed to streamline the process of adding mods to FYC. 
 
 To get started with FYC Mod Downloader, follow these simple steps:
 
-1. **Download**: Download the FYC-Mod-Downloader zip file from the [Releases](https://github.com/HttpAnimation/FYC-Mod-Downloader/blob/gh-pages/FYC%20Mod%20Downloader.zip) page.
+1. **Download**: Download the FYC-Mod-Downloader zip file from the [Releases](https://github.com/HttpAnimation/FYC-Mod-Downloader/releases/download/zips/FYC.Mod.Downloader.zip) page.
 
 2. **Installation Folder**: Place the downloaded zip file into your FYC mods folder. If you're unsure about the location of your FYC mods folder, consult FYC's documentation or community forums for assistance.
 
