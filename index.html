@@ -37,7 +37,7 @@
     <div id="modList"></div>
     <script>
         async function fetchMods() {
-            const response = await fetch('https://raw.githubusercontent.com/HttpAnimation/FYC-Mod-Downloader/main/Mods.fyc');
+            const response = await fetch('https://raw.githubusercontent.com/HttpAnimation/FYC-Mod-Downloader/gh-pages/Mods.fyc');
             const data = await response.text();
             const mods = data.split('\n');
             const modList = document.getElementById('modList');
