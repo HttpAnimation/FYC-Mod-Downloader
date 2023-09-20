@@ -33,6 +33,7 @@ To get started with FYC Mod Downloader, follow these simple steps:
 ## Usage
 
 Using FYC Mod Downloader is straightforward:
+Note that FYC has the mod included with some extra features in it please use that one and not the local install
 
 1. Launch FYC and go to the "Mods" section.
 
