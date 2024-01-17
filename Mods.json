@@ -1,5 +1,10 @@
 [
     {
+        "Name": "MusicDock",
+        "DownloadURL": "https://github.com/HttpAnimation/MusicDock/raw/fyc-mod/index.tar.gz",
+        "details": "A website for streaming music from anywhare."
+    },
+    {
         "Name": "Pages2Github",
         "DownloadURL": "https://github.com/HttpAnimation/FYC-Mod-Downloader/releases/download/zips/Pages2Github.zip",
         "details": "Takes a page link and gives the GitHub link"
