@@ -1,10 +1,5 @@
 [
     {
-        "Name": "Home",
-        "DownloadURL": "../../index.html",
-        "details": "Takes you back home"
-    },
-    {
         "Name": "Pages2Github",
         "DownloadURL": "https://github.com/HttpAnimation/FYC-Mod-Downloader/releases/download/zips/Pages2Github.zip",
         "details": "Takes a page link and gives the GitHub link"
