@@ -1,4 +1,3 @@
-<!--This is the URL version+ mod version when using the mod or index.html with FYC-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,44 +38,40 @@
     <div id="modList"></div>
     <script>
         async function fetchMods() {
-            const response = await fetch('https://raw.githubusercontent.com/HttpAnimation/FYC-Mod-Downloader/gh-pages/Mods.fyc');
-            const data = await response.text();
-            const mods = data.split('\n');
+            const response = await fetch('https://raw.githubusercontent.com/HttpAnimation/FYC-Mod-Downloader/gh-pages/Mods.json');
+            const mods = await response.json();
             const modList = document.getElementById('modList');
             
             mods.forEach(mod => {
-                const matches = mod.match(/(.*?) (https:\/\/\S+) \((.*?)\)/);
-                if (matches) {
-                    const modName = matches[1];
-                    const modURL = matches[2];
-                    const modDescription = matches[3];
+                const modName = mod.Name;
+                const modURL = mod.DownloadURL;
+                const modDescription = mod.details;
 
-                    const modDiv = document.createElement('div');
-                    modDiv.classList.add('mod-info');
+                const modDiv = document.createElement('div');
+                modDiv.classList.add('mod-info');
 
-                    const modNameElement = document.createElement('div');
-                    modNameElement.classList.add('mod-name');
-                    modNameElement.textContent = modName;
-                    modDiv.appendChild(modNameElement);
+                const modNameElement = document.createElement('div');
+                modNameElement.classList.add('mod-name');
+                modNameElement.textContent = modName;
+                modDiv.appendChild(modNameElement);
 
-                    const modDescriptionElement = document.createElement('div');
-                    modDescriptionElement.classList.add('mod-description');
-                    modDescriptionElement.textContent = modDescription;
-                    modDiv.appendChild(modDescriptionElement);
+                const modDescriptionElement = document.createElement('div');
+                modDescriptionElement.classList.add('mod-description');
+                modDescriptionElement.textContent = modDescription;
+                modDiv.appendChild(modDescriptionElement);
 
-                    const downloadButton = document.createElement('a');
-                    downloadButton.href = modURL;
-                    downloadButton.target = '_blank';
-                    downloadButton.textContent = 'Download';
-                    downloadButton.classList.add('download-button');
-                    modDiv.appendChild(downloadButton);
+                const downloadButton = document.createElement('a');
+                downloadButton.href = modURL;
+                downloadButton.target = '_blank';
+                downloadButton.textContent = 'Download';
+                downloadButton.classList.add('download-button');
+                modDiv.appendChild(downloadButton);
 
-                    modList.appendChild(modDiv);
+                modList.appendChild(modDiv);
 
-                    // Add a line break after each mod
-                    const lineBreak = document.createElement('hr');
-                    modList.appendChild(lineBreak);
-                }
+                // Add a line break after each mod
+                const lineBreak = document.createElement('hr');
+                modList.appendChild(lineBreak);
             });
         }
         fetchMods();
